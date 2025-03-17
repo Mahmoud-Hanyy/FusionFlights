@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
-</head>
+    <title>fusionflights</title>
+    <link rel='stylesheet' href='./style.css'>
+    <script src='./script.js'></script>
+    </head>
+
 <body>
-    
+    <nav class="nav">
+        <h1 class="logo">fusionflights</h1>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="btn">Contact</a></li>
+        </ul>
+        <img src="./images/menu-btn.png" alt="menuButton" class="menu-btn">
+    </nav>
+    <header>
+        <div class="first-section">
+            <h2>Explore the Beauty of Nature</h2>
+            <div class="line"></div>
+            <h1>IN OUR WORLD</h1>
+            <a href="#" class="btn">Learn more</a>
+        </div>
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navmenu = document.querySelector('.nav-menu')
+
+        menuBtn.addEventListener('click',()=>{
+            navmenu.classList.toggle('mobile-menu')
+        })
+    </script>
 </body>
 </html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.nav{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+.nav-menu li{
+    margin: 0 30px;
+}
+.nav-menu li a{
+    color: whitesmoke;;
+}
+.nav-menu li:first-child a {
+    color: #fc036b;
+    font-weight: bold;
+}
+header{
+    background-image: url(./images/bg.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-section{
+    margin: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.first-section h2{
+    font-size: 3vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.first-section h1{
+    font-size: 8vmin;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn{
+    padding: 8px 20px;
+    background-color: #fc036b;
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 3vmin;
+}
+.menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+/* for mobiles */
+@media only screen and (max-width:850px){
+    .nav{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: cadetblue;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-menu li{
+        margin: 30px auto;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
