@@ -12,6 +12,9 @@ a{
 ul{
     list-style: none;
 }
+body , html {
+    overflow-x: hidden;
+}
 
 .nav{
     position: absolute;
@@ -82,6 +85,78 @@ header{
     cursor: pointer;
     display: none;
 }
+/* Events */
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: #000;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row .col img {
+    padding-bottom: 10px;
+}
+.events .row{
+    margin-top: 50px;
+}
+.h4{
+    font-size: 3vmin;
+    margin: 20px auto;
+}
+p{
+    padding: 0px 40px;
+}
+.events .btn{
+    margin-top: 30px;
+}
+.explore{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/sea.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.explore-content{
+    width: 80%;
+    height: 53%;
+    color: black;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    margin-left: 4%;
+}
+.explore-content h1{
+    font-size: 7vmin;
+    margin: 0 40px;
+}
+.explore-content .line{
+    margin: 20px 40px;
+}
+.explore-content p{
+    color: black;
+    margin-bottom: 30px;
+}
+.explore-content .btn{
+    margin: 40px;
+}
+
 /* for mobiles */
 @media only screen and (max-width:850px){
     .nav{
