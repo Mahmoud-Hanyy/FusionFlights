@@ -5,7 +5,6 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>fusionflights</title>
     <link rel='stylesheet' href='./style.css'>
-    <script src='./script.js'></script>
     </head>
 
 <body>
@@ -13,10 +12,9 @@
         <h1 class="logo">fusionflights</h1>
         <ul class="nav-menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Tours</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#" class="btn">Contact</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#tours">Tours</a></li>
         </ul>
         <img src="./images/menu-btn.png" alt="menuButton" class="menu-btn">
     </nav>
@@ -30,7 +28,7 @@
     </header>
 
     <!-- Events Section -->
-    <section class="events">
+    <section class="events" id="events">
         <div class="title">
             <h1>Upcoming Events</h1>
             <div class="line"></div>
@@ -50,14 +48,42 @@
             </div>
         </div>
     </section>
-<section class="explore">
-    <div class="explore-content">
-        <h1>Explore the Beauty</h1>
-        <div class="line"></div>
-        <p>Taking a nature walk, without all your technological gadgets, allows the part of your brain that receives all the attention overload time to recover and allows room for more creative thinking. Being in nature helps us to feel alive, encourages a meditative mindset and makes us happier humans. Nature in your neighborhood can also help give us a stronger feeling of belonging and sense of community.</p>
-        <a href="#" class="btn">Learn more</a>
+
+    <!-- Explore Section -->
+    <section class="explore" id="explore">
+        <div class="explore-content">
+            <h1>Explore the Beauty</h1>
+            <div class="line"></div>
+            <p>Taking a nature walk, without all your technological gadgets, allows the part of your brain that receives all the attention overload time to recover and allows room for more creative thinking. Being in nature helps us to feel alive, encourages a meditative mindset and makes us happier humans. Nature in your neighborhood can also help give us a stronger feeling of belonging and sense of community.</p>
+            <a href="#" class="btn">Learn more</a>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section class="tours" id="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS</h1>
+                <div class="line"></div>
+                <p>Luxury awaits with priority access at Vatican's Sistine Chapel and St. Peter's Basilica. Float through Venice's Grand Canal by gondola, climb the 323-foot Bell Tower. The trip peaks in Santorini with a BBQ boat tour around Caldera volcano and sunset views from Oia's blue-domed vista.</p>
+                <a href="#" class="btn">Learn more</a>
+            </div>
+            <div class="col image-col">
+                <div class="img-gallery">
+                    <img src="./images/tour1.jpeg" alt="tour1">
+                    <img src="./images/tour2.jpg" alt="tour2">
+                    <img src="./images/tour3.jpg" alt="tour3">
+                    <img src="./images/tour4.jpg" alt="tour4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>12430 Moen Drives,Michigan,North Willhaven || Postal Code: 31748-0953</p>
+        <p>Copyright &copy;2025 Mahmoud Hany</p>
     </div>
-</section>
 
     <script>
         const menuBtn = document.querySelector('.menu-btn')

@@ -14,6 +14,24 @@ ul{
 }
 body , html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+img{
+    transition: transform .3s ease;
+
+}
+img:hover{
+    transform: scale(1.1);
+}
+.btn:hover{
+    background: whitesmoke;
+    color: #fc036b;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.371);
+}
+li:hover{
+    color: #fc036b;
+    cursor: pointer;
 }
 
 .nav{
@@ -93,7 +111,7 @@ section{
 .title{
     text-align: center;
     font-size: 4vmin;
-    color: #000;
+    color: #484872;
 }
 .row{
     display: flex;
@@ -113,16 +131,20 @@ section{
 .events .row{
     margin-top: 50px;
 }
-.h4{
+h4{
     font-size: 3vmin;
     margin: 20px auto;
+    color: #484872;
 }
 p{
     padding: 0px 40px;
+    color: #484872;
 }
 .events .btn{
     margin-top: 30px;
 }
+
+/*Explore */
 .explore{
     width: 100%;
     height: 100vh;
@@ -136,7 +158,7 @@ p{
 .explore-content{
     width: 80%;
     height: 53%;
-    color: black;
+    color: #484872;
     padding: 50px;
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
@@ -145,16 +167,57 @@ p{
 .explore-content h1{
     font-size: 7vmin;
     margin: 0 40px;
+    color: #484872;
 }
 .explore-content .line{
     margin: 20px 40px;
 }
 .explore-content p{
-    color: black;
+    color: #484872;
     margin-bottom: 30px;
 }
 .explore-content .btn{
     margin: 40px;
+}
+
+/* Tours gallery */
+.tours .row .col{
+    width: 50%;
+}
+.tours .img-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.img-gallery img{
+    width: 250px;
+    margin: 10px;
+}
+.content-col{
+    width: 40%;
+}
+.content-col h1{
+    font-size: 7vmin;
+    color: #484872;
+}
+.content-col p{
+    padding: 0;
+    margin: 30px auto;
+    color: #484872;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: #484872;
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 20px auto;
 }
 
 /* for mobiles */
@@ -184,5 +247,41 @@ p{
     }
     .menu-btn{
         display: block;
+    }
+    /* Events */
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width: 90%;
+    }
+    /* Explore */
+    .explore-content{
+        width: 100%;
+        height: 65%;
+        margin-right: 3%;
+    }
+    .explore-content h1{
+        width: 100%;
+    }
+    /* Tours */
+    .tours .col{
+        width: 100%;
+    }
+    .content-col h1{
+        font-size: 4vmin;
+    }
+    .content-col p{
+        width: 100%;
+    }
+    .img-gallery img{
+    width: 250px;
+    margin: 10px;
+}
+    .footer{
+        padding: 10px;
     }
 }
